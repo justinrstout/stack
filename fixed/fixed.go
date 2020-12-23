@@ -1,7 +1,7 @@
 package fixed
 
 type Stack struct {
-	seq  [255]int
+	seq  [256]int
 	next uint8
 }
 
