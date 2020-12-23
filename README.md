@@ -34,11 +34,12 @@ This module achieves 1-2 orders of magnitude better performance than the generic
 goos: darwin
 goarch: amd64
 pkg: github.com/justinrstout/stack
-Benchmark_LargePush/container/list-12         	 8767942	       115 ns/op
-Benchmark_LargePush/stack/ints-12             	100000000	        13.3 ns/op
-Benchmark_LargePush/handwritten-12            	925843028	         1.53 ns/op
-Benchmark_SmallPushPop/container/list-12      	 8065232	       148 ns/op
-Benchmark_SmallPushPop/stack/ints-12          	327332500	         3.66 ns/op
-Benchmark_SmallPushPop/stack/fixed-12         	297872582	         4.11 ns/op
-Benchmark_SmallPushPop/handwritten-12         	230282539	         5.31 ns/op
+Benchmark_LargePush/container/list-12         	10899460	       126 ns/op
+Benchmark_LargePush/stack/ints-12             	100000000	        12.4 ns/op
+Benchmark_LargePush/stack/fixed-12            	972272236	         1.23 ns/op
+Benchmark_LargePush/handwritten-12            	937995576	         1.36 ns/op
+Benchmark_SmallPushPop/container/list-12      	 8018734	       146 ns/op
+Benchmark_SmallPushPop/stack/ints-12          	327493423	         3.67 ns/op
+Benchmark_SmallPushPop/stack/fixed-12         	290399660	         4.08 ns/op
+Benchmark_SmallPushPop/handwritten-12         	226686604	         5.27 ns/op
 ```

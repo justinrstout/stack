@@ -22,6 +22,13 @@ func Benchmark_LargePush(b *testing.B) {
 			st.Push(i)
 		}
 	})
+	b.Run("stack/fixed", func(b *testing.B) {
+		st := new(fixed.Stack)
+		b.ResetTimer()
+		for i := 0; i < b.N; i++ {
+			st.Push(i)
+		}
+	})
 	b.Run("handwritten", func(b *testing.B) {
 		st := make([]int, b.N)
 		head := 0
